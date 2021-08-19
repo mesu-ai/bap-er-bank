@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+
+    <!-- Tailwind Cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="text-4xl font-bold text-center mt-3"><span class="text-green-700">Transection </span>Page</h1>
+
+    <!-- Transection -->
+    <section class="container mx-auto">
+
+        <div class="grid grid-cols-3 gap-4 bg-yellow-100 p-10 mt-10 text-center  font-bold ">
+            <div class="bg-white shadow-lg rounded-2xl border-2 p-6 space-y-4">
+                <h3 class="text-3xl">Deposite </h3>
+                <p class="text-3xl text-green-600 ">$<span id="user-deposite" class="text-red-800">100</span></p>
+
+            </div>
+            <div class="bg-white shadow-lg rounded-2xl border-2 p-6 space-y-4">
+                <h3 class="text-3xl">Withdraw</h3>
+                <p class="text-3xl text-green-600 ">$<span id="user-withdraw" class="text-red-800">100</span></p>
+            </div>
+            <div class="bg-white shadow-lg rounded-2xl border-2 p-6 space-y-4">
+                <h3 class="text-3xl ">Balance</h3>
+                <p class="text-3xl text-green-600 ">$<span id="user-balance" class="text-red-800">500.0</span></p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Deposite & Withdraw -->
+
+    <section class="container mx-auto bg-blue-100 mt-10">
+        <div class=" grid grid-cols-2 p-8 gap-4 ">
+            <div class="text-center space-y-3 bg-gray-400 p-5 rounded shadow-lg font-medium">
+                <h3 class="text-3xl">Deposite</h3>
+                <p><input class="rounded-md p-2 text-xl" type="number" name="" id="depodite-amount"
+                        placeholder="Enter Amount" required></p>
+                <button id="deposite-btn"
+                    class=" bg-green-700 text-white rounded-lg p-2 text-xl font-bold">Deposite</button>
+            </div>
+
+            <div class="text-center space-y-3 bg-gray-400 p-5 rounded shadow-lg font-medium">
+                <h3 class="text-3xl">Withdraw </h3>
+                <p><input class="rounded-md p-2 text-xl" type="number" name="" id="withdraw-amount"
+                        placeholder="Enter Amount" required></p>
+                <button id="withdraw-btn"
+                    class="bg-green-700 text-white rounded-lg p-2 text-xl font-bold">Withdraw</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <script src="js/transection.js"></script>
+</body>
+
+</html>

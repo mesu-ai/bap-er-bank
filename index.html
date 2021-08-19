@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bap-er-bank</title>
+
+    <!-- Tailwind Cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        .required::after {
+            content: '*';
+            color: red;
+            font-size: 1.5rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center font-medium  mt-20">Welcome to <span class="text-indigo-600">Bap-Er-Hotel</span>
+        </h1>
+
+    </header>
+
+
+    <section class="container mx-auto bg-yellow-200 mt-10 pb-10">
+
+        <h3 class="text-3xl font-bold text-white text-center bg-green-300 p-2 ">Login Page</h3>
+
+        <div class="w-1/2 flex flex-col my-6 mx-auto">
+
+            <label class="block required" for="emailId">Email</label>
+            <input type="email" name="email" id="user-EmailId" placeholder="Enter Your Email:" class="block p-1.5"
+                required>
+
+            <label class="block mt-3 required" for="passwordId">Password</label>
+            <input type="password" name="password" id="user-PasswordId" placeholder="Enter Your Password" class="p-1.5"
+                required>
+
+
+
+        </div>
+        <button id="loginId" class="mx-auto bg-gray-900 text-white px-4 py-2 rounded-lg block">Login</button>
+
+
+    </section>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
